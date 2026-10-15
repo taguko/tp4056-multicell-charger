@@ -1,0 +1,140 @@
+(footprint "TP4056_Module"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "3b40c393-a0ed-466f-97ef-712add6bd4ba")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TP4056_Module"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a8c3c758-826e-48e3-8170-1254090c5f0d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://components101.com/modules/tp4056a-li-ion-battery-chargingdischarging-module"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "16610b19-437f-4f07-8283-93d3a1694461")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e106a5fc-d27a-40e3-bf3f-52afe65359c4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -8.725 -14.125)
+		(end 8.725 14.125)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "b1212500-a953-4721-86a2-49cc067ce366")
+	)
+	(fp_rect
+		(start -8.85 -14.25)
+		(end 8.85 14.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "b76071d1-b341-45b8-924a-8d9825313e69")
+	)
+	(fp_rect
+		(start -8.6 -14)
+		(end 8.6 14)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "793bf3f5-db28-4420-9019-3001460801aa")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "d3717d65-4dce-4b11-953f-38ad008a7f08")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -7.05 12.45)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "232adf8a-2b05-48c1-a819-0f71dc9d18f9")
+	)
+	(pad "2" smd rect
+		(at 7.05 12.45)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b5f5c9a1-a2d2-4e84-bd14-a8e7b2627d5a")
+	)
+	(pad "3" smd rect
+		(at 7.05 -12)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3eb44c53-ba8d-48f2-b064-22011995a4f4")
+	)
+	(pad "4" smd rect
+		(at 4 -12)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "cfa14dc6-0d26-475a-a9ec-8ad1d8f43c96")
+	)
+	(pad "5" smd rect
+		(at -4 -12)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6f3c4cbd-03e9-4d2e-98d8-81a7f930ca39")
+	)
+	(pad "6" smd rect
+		(at -7.05 -12)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "20d1ac7c-4e24-4e32-be56-7c21f9111fc7")
+	)
+	(embedded_fonts no)
+)

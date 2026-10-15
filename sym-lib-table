@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "Charger_Module") (type "KiCad") (uri "${KIPRJMOD}/Charger_Module.kicad_sym") (options "") (descr ""))
+	(lib (name "DCDC") (type "KiCad") (uri "${KIPRJMOD}/DCDC.kicad_sym") (options "") (descr ""))
+)
