@@ -5,8 +5,8 @@
 	(uuid "4a25c5cb-7c27-42d2-9140-6b6ff3df1dcf")
 	(paper "A4")
 	(title_block
-		(title "tp4056-multicell-charger")
-		(date "2026-10-07")
+		(title "TP4056 Multicell Charger")
+		(date "2026-10-15")
 		(rev "1.0")
 	)
 	(lib_symbols
