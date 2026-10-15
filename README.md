@@ -5,7 +5,7 @@ A USB Type-C powered charger for small 2S/3S LiPo and Li-ion battery packs.
 This project was designed to provide a simple and convenient way to charge small multicell batteries without using a full-featured RC balance charger.
 
 ## Prototype
-![Prototype1 Charge](ima/prototype1_charge.jpg)
+![Prototype1 Charge](img/prototype1_charge.jpg)
 
 ## Features
 
