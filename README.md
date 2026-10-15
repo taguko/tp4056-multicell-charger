@@ -17,9 +17,9 @@ This project was designed to provide a simple and convenient way to charge small
 
 Conventional multicell chargers charge the entire battery pack while balancing cell voltages using a balancing circuit.
 
-This project takes a different approach. Each cell is charged independently by its own TP4056 charging circuit. Isolated DC/DC converters provide separate power domains for upper cells, allowing every cell to be charged directly to its target voltage.
+This project takes a different approach. Each cell is charged independently using its own TP4056 charger. Isolated DC/DC converters provide separate power domains for upper cells, allowing every cell in the pack to be charged directly to its target voltage.
 
-As a result, the cell voltages naturally converge without requiring a conventional balancing circuit.
+As a result, cell voltages naturally converge without requiring a conventional balancing circuit.
 
 ## Directory Structure
 
@@ -33,26 +33,26 @@ As a result, the cell voltages naturally converge without requiring a convention
 └── DCDC.pretty/
 ```
 
+## Limitations
+
+- This charger assumes that all cells are in reasonable condition and have similar characteristics.
+- Cell voltage balance may vary depending on differences in cell aging, internal resistance, capacity, and self-discharge rate.
+- Perfect cell balancing under all conditions is not guaranteed.
+- This project is intended for users who understand the operating principles and limitations of Li-ion/LiPo charging circuits.
+- Users are expected to review the schematic and evaluate the design themselves before use.
+
 ## Safety Notice
 
 - For LiPo and Li-ion batteries only.
 - Do not use damaged batteries.
 - Never leave batteries unattended while charging.
 - Do not connect batteries to both the 2-cell and 3-cell connectors simultaneously.
-- This charger assumes that all cells are in reasonable condition and have similar characteristics.
-- Cell voltage balance may vary depending on differences in cell aging, internal resistance, capacity, and self-discharge rate.
-- The author makes no guarantee that perfect cell balancing will be achieved under all conditions.
-- This project is intended for users who understand the operating principles and limitations of Li-ion/LiPo charging circuits.
-- Users are expected to review the schematic and evaluate the design themselves before use.
-- This project is primarily intended for educational, experimental, and research purposes.
-- The author assumes no responsibility for any damage resulting from the use of this project.
+- Verify connector polarity before use.
+- Use this project at your own risk.
 
-## Safety Notice
+## Intended Use
 
-- For LiPo and Li-ion batteries only.
-- Do not use damaged batteries.
-- Never leave batteries unattended while charging.
-- The author assumes no responsibility for any damage resulting from the use of this project.
+This project is primarily intended for educational, experimental, and research purposes.
 
 ## License
 
