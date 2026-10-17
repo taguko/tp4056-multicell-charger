@@ -16,24 +16,43 @@ This project was designed to provide a simple and convenient way to charge small
 - Isolated DC/DC converters for upper cells
 - No conventional balancing circuit required
 
+## Recommended Battery Capacity
+
+100mAh - 300mAh
+
+## Charging Current
+
+Each charging channel is configured for approximately 120mA using a 10kΩ PROG resistor.
+
 ## Concept
 
 Conventional multicell chargers charge the entire battery pack while balancing cell voltages using a balancing circuit.
 
-This project takes a different approach. Each cell is charged independently using its own TP4056 charger. Isolated DC/DC converters provide separate power domains for upper cells, allowing every cell in the pack to be charged directly to its target voltage.
+This project takes a different approach. Each cell is charged independently using its own TP4056 charger.
+
+Because the cells inside a 2S/3S pack are connected in series, each TP4056 charger must operate in an isolated power domain. Isolated DC/DC converters allow multiple TP4056 channels to charge different cells independently.
 
 As a result, cell voltages naturally converge without requiring a conventional balancing circuit.
 
-## Directory Structure
+```mermaid
+flowchart LR
 
-```text
-.
-├── tp4056-multicell-charger.kicad_sch
-├── tp4056-multicell-charger.kicad_pcb
-├── Charger_Module.kicad_sym
-├── DCDC.kicad_sym
-├── Charger_Module.pretty/
-└── DCDC.pretty/
+USB["USB-C 5V"]
+
+USB --> TP1["TP4056<br/>Cell1"]
+USB --> ISO1["B0505S-1W"]
+USB --> ISO2["B0505S-1W"]
+
+ISO1 --> TP2["TP4056<br/>Cell2"]
+ISO2 --> TP3["TP4056<br/>Cell3"]
+
+TP1 --> C1["Cell1"]
+TP2 --> C2["Cell2"]
+TP3 --> C3["Cell3"]
+
+C1 --> PACK["2S/3S LiPo・Li-ion Pack"]
+C2 --> PACK
+C3 --> PACK
 ```
 
 ## Limitations
@@ -53,9 +72,11 @@ As a result, cell voltages naturally converge without requiring a conventional b
 - Verify connector polarity before use.
 - Use this project at your own risk.
 
-## Intended Use
+## Disclaimer
 
-This project is primarily intended for educational, experimental, and research purposes.
+This project is provided for educational, experimental, and research purposes only.
+
+Lithium battery charging involves inherent risks. The author assumes no responsibility for any damage, injury, or loss resulting from the use of this project.
 
 ## License
 
