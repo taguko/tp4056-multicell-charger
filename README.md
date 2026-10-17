@@ -39,7 +39,7 @@ flowchart LR
 
 USB["USB-C 5V"]
 
-USB --> ISO1[""]
+USB --> ISO1[" "]
 USB --> ISO2["B0505S-1W<br/>Cell2"]
 USB --> ISO3["B0505S-1W<br/>Cell3"]
 
