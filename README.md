@@ -12,6 +12,7 @@ This project was designed to provide a simple and convenient way to charge small
 - USB Type-C input
 - Supports 2S and 3S LiPo / Li-ion battery packs
 - Independent CC/CV charging for each cell
+- Approximately 120mA charging current per cell
 - TP4056-based charging channels
 - Isolated DC/DC converters for upper cells
 - No conventional balancing circuit required
@@ -19,6 +20,8 @@ This project was designed to provide a simple and convenient way to charge small
 ## Recommended Battery Capacity
 
 100mAh - 300mAh
+
+The charging current is approximately 120mA per cell. This corresponds to about 1C charging for a 120mAh battery and about 0.4C for a 300mAh battery.
 
 ## Charging Current
 
