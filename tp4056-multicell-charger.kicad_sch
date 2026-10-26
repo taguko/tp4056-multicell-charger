@@ -7,7 +7,7 @@
 	(title_block
 		(title "TP4056 Multicell Charger")
 		(date "2026-10-15")
-		(rev "1.0")
+		(rev "${REVISION}")
 	)
 	(lib_symbols
 		(symbol "Charger_Module:TP4056"

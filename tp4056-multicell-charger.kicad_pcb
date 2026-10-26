@@ -87,6 +87,7 @@
 			(outputdirectory "")
 		)
 	)
+	(property "REVISION" "v1.0.0")
 	(footprint "Connector_JST:JST_XH_S4B-XH-A_1x04_P2.50mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "09cc4f30-e35f-48ec-8bd3-5af152939645")
@@ -3340,6 +3341,18 @@
 				(size 0.8 0.8)
 				(bold yes)
 			)
+		)
+	)
+	(gr_text "Rev ${REVISION}"
+		(at 117 119 0)
+		(layer "F.SilkS")
+		(uuid "c3e38c7a-a4ba-47a6-a621-8d595d99f3d6")
+		(effects
+			(font
+				(size 1 1)
+				(bold yes)
+			)
+			(justify left bottom)
 		)
 	)
 	(gr_text "-\n\n\n+"
