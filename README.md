@@ -58,6 +58,9 @@ C2 --> PACK
 C3 --> PACK
 ```
 
+## BOM
+[PartsCabi.net](https://partscabi.net/list/6ee6419b-a65a-492d-b7c7-b3cb2271a9e4)
+
 ## Limitations
 
 - This charger assumes that all cells are in reasonable condition and have similar characteristics.
