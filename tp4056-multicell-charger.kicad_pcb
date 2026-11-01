@@ -7,6 +7,10 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(date "2026-11-01")
+		(rev "${REV}")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -87,7 +91,7 @@
 			(outputdirectory "")
 		)
 	)
-	(property "REVISION" "v1.0.0")
+	(property "REV" "v1.0.0")
 	(footprint "Connector_JST:JST_XH_S4B-XH-A_1x04_P2.50mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "09cc4f30-e35f-48ec-8bd3-5af152939645")
@@ -3343,7 +3347,7 @@
 			)
 		)
 	)
-	(gr_text "Rev ${REVISION}"
+	(gr_text "Rev ${REV}"
 		(at 117 119 0)
 		(layer "F.SilkS")
 		(uuid "c3e38c7a-a4ba-47a6-a621-8d595d99f3d6")
